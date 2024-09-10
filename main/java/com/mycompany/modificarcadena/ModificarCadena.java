@@ -6,7 +6,7 @@ package com.mycompany.modificarcadena;
 
 /**
  *
- * @author juand
+ * @author Juan David Ruiz Gomez -  Elkin Santiago Ruiz Rodriguez
  */
 import java.util.HashMap;
 import java.util.Map;
