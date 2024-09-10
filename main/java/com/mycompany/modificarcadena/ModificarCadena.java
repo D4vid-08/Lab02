@@ -45,17 +45,16 @@ public class ModificarCadena {
                 frecuencia.put(c, frecuencia.getOrDefault(c, 0) + 1);
             }
         }
-        
         char maxChar = linea.charAt(0);
         int maxFrecuencia = 0;
-        
+       
         for (Map.Entry<Character, Integer> entry : frecuencia.entrySet()) {
             if (entry.getValue() > maxFrecuencia) {
                 maxChar = entry.getKey();
                 maxFrecuencia = entry.getValue();
             }
         }
-        
+       
         return maxChar;
     }
 
@@ -71,3 +70,4 @@ public class ModificarCadena {
     }
 }
 
+    
