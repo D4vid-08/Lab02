@@ -7,7 +7,7 @@ package com.mycompany.comparacionordenamientos;
 
 /**
  *
- * @author juand
+ * @author Juan David Ruiz Gomez - Elkin Santiago Ruiz Rodriguez 
  */
   import java.util.Arrays;
 import java.util.Random;
