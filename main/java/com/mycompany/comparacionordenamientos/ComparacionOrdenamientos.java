@@ -107,9 +107,7 @@ public class ComparacionOrdenamientos {
             arreglo[i] = temp;
         }
     }
-
-    // Merge Sort
-    public static void mergeSort(double[] arreglo, int l, int r) {
+public static void mergeSort(double[] arreglo, int l, int r) {
         if (l < r) {
             int m = (l + r) / 2;
             mergeSort(arreglo, l, m);
@@ -121,20 +119,20 @@ public class ComparacionOrdenamientos {
     public static void merge(double[] arreglo, int l, int m, int r) {
         int n1 = m - l + 1;
         int n2 = r - m;
-        
+       
         double[] L = new double[n1];
         double[] R = new double[n2];
-        
+       
         for (int i = 0; i < n1; ++i) {
             L[i] = arreglo[l + i];
         }
         for (int j = 0; j < n2; ++j) {
             R[j] = arreglo[m + 1 + j];
         }
-        
+       
         int i = 0, j = 0;
         int k = l;
-        
+       
         while (i < n1 && j < n2) {
             if (L[i] <= R[j]) {
                 arreglo[k] = L[i];
@@ -145,13 +143,13 @@ public class ComparacionOrdenamientos {
             }
             k++;
         }
-        
+       
         while (i < n1) {
             arreglo[k] = L[i];
             i++;
             k++;
         }
-        
+       
         while (j < n2) {
             arreglo[k] = R[j];
             j++;
@@ -159,4 +157,6 @@ public class ComparacionOrdenamientos {
         }
     }
 }
+
+   
 
