@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author juan david ruiz gomez, elkin santiago ruiz rodriguez
+ * @author juan david ruiz gomez, Elkin Santiago Ruiz Rodriguez
  */
 public class EstadisticasArreglo {
 
