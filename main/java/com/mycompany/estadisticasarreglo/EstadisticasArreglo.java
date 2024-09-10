@@ -5,6 +5,8 @@
 package com.mycompany.estadisticasarreglo;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -84,12 +86,23 @@ public class EstadisticasArreglo {
         }
         return suma / arreglo.length;
     }
-
-    private static double calcularModa(double[] arreglo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    // Función para calcular la moda
+    public static double calcularModa(double[] arreglo) {
+        HashMap<Double, Integer> frecuencia = new HashMap<>();
+        for (double num : arreglo) {
+            frecuencia.put(num, frecuencia.getOrDefault(num, 0) + 1);
+        }
+       
+        double moda = arreglo[0];
+        int maxFrecuencia = 1;
+       
+        for (Map.Entry<Double, Integer> entry : frecuencia.entrySet()) {
+            if (entry.getValue() > maxFrecuencia) {
+                moda = entry.getKey();
+                maxFrecuencia = entry.getValue();
+            }
+        }
+       
+        return moda;
     }
 }
-    
-    
-
-
